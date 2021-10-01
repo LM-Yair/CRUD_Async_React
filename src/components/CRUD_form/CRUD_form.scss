@@ -1,0 +1,44 @@
+.CRUD__title{
+  text-align: center;
+  font-weight: 400;
+}
+
+.CRUD__form__container > input{
+  padding-left: 1rem;
+  margin: 0.5rem auto;
+  background: none;
+  display: block;
+  border: 1px solid #bbb;
+  height: 2rem;
+  width: 90%;
+  border-radius: 10px;
+  color: inherit;
+  outline: none;
+}
+
+.CRUD__btns{
+  display: flex;
+  justify-content: space-around;
+}
+
+.CRUD__btn--send,
+.CRUD__btn--reset{
+  width: 7rem;
+  height: 2.5rem;
+  background: none;
+  border: 1px solid #bbb;
+  border-radius: 10px;
+  color: inherit;
+  cursor: pointer;
+}
+
+.CRUD__btn--send{
+  background-color: #33c3f0;
+}
+
+@media only screen and ( min-width: 768px ){
+  .CRUD__form{
+    width: 80%;
+    margin: 0  auto;
+  }
+}

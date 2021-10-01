@@ -1,0 +1,28 @@
+
+.DarkMode{
+  z-index: 1000;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+}
+
+.DarkMode__btn{
+  width: 2.6rem;
+  cursor: pointer;
+  svg{
+    border-radius: 50%;
+    box-shadow: 2px 2px 6px #7779;
+  }
+  transition: transform 0.2s ease;
+}
+
+.btnMoon{
+  transition: fill 0.3s ease, stroke 0.3s ease;
+}
+
+@media only screen and ( min-width: 1024px ){
+  .DarkMode__btn:hover{
+    transform: rotateZ( 30deg );
+  }
+}
+

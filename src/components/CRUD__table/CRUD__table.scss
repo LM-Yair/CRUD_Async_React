@@ -1,0 +1,40 @@
+$bdrBotom: 1px solid #ccc;
+
+.container__table{
+  margin: 2rem 0;
+  overflow: auto;
+}
+
+thead {
+  height: 3rem;
+  border-bottom: $bdrBotom;
+}
+
+tbody{
+  text-align: center;
+}
+
+.table__dats{
+  width: 100%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.noData{
+  text-align: center;
+}
+
+thead th{
+  font-weight: 400;
+}
+
+tbody > tr{
+  height: 2.5rem;
+  border-bottom: $bdrBotom;
+}
+
+@media only screen and ( min-width: 1024px ){
+  .table__dats{
+    min-width: 850px;
+  }
+}

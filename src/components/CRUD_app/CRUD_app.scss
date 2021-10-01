@@ -1,0 +1,19 @@
+
+.CRUD{
+  width: 90vmin;
+  margin: 0 auto;
+}
+
+@media only screen and ( min-width: 768px ){
+  .CRUD{
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and ( min-width: 1024px ){
+  .CRUD{
+    width: 855px;
+    margin: 0 auto;
+  }
+}

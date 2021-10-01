@@ -1,0 +1,29 @@
+
+.td__btns{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.td__btn{
+  height: 2rem;
+  width: 4rem;
+  margin: 5px;
+  background: none;
+  border: none;
+  border: 1px solid #bbb;
+  border-radius: 10px;
+  color: inherit;
+  cursor: pointer;
+}
+
+.td__btn:hover{
+  background-color: #33c3f0;
+}
+
+@media only screen and ( min-width: 1024px ){
+  .td__btns{
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}

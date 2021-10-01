@@ -1,0 +1,11 @@
+{
+  "calzados": [
+    {
+      "id": 1633051689893,
+      "tipo": "Tenis",
+      "marca": "Nike",
+      "pais": "MX",
+      "precio": "$2600"
+    }
+  ]
+}
