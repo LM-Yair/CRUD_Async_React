@@ -18,9 +18,9 @@ const Table = ({ data, setDataToEdit, deleteData }) => {
       </thead>
       <tbody>
     {
-      data.length === 0 
-      ? <tr><td className='noData' colSpan='5'>Sin datos...</td></tr>
-      : data.map( el => <TableRow key={ el.id } calzado={ el } setDataToEdit={ setDataToEdit } deleteData={ deleteData }/> )
+      !data.length > 0 
+	? <tr><td className='noData' colSpan='5'>Sin datos...</td></tr>
+	: data.map( el => <TableRow key={ el.id } calzado={ el } setDataToEdit={ setDataToEdit } deleteData={ deleteData }/> )
     }
 	
       </tbody>

@@ -1,0 +1,45 @@
+warning: LF will be replaced by CRLF in src/api/db.json.
+The file will have its original line endings in your working directory
+[1mdiff --git a/src/api/db.json b/src/api/db.json[m
+[1mindex 198b163..0d88771 100644[m
+[1m--- a/src/api/db.json[m
+[1m+++ b/src/api/db.json[m
+[36m@@ -1,11 +1,18 @@[m
+ {[m
+   "calzados": [[m
+     {[m
+[31m-      "id": 1633051689893,[m
+[32m+[m[32m      "id": 1634594893692,[m
+       "tipo": "Tenis",[m
+       "marca": "Nike",[m
+[31m-      "pais": "MX",[m
+[32m+[m[32m      "pais": "EEUU",[m
+       "precio": "$2600"[m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m      "id": 1634594917369,[m
+[32m+[m[32m      "tipo": "Pantunflas",[m
+[32m+[m[32m      "marca": "Nike",[m
+[32m+[m[32m      "pais": "MX",[m
+[32m+[m[32m      "precio": "$750"[m
+     }[m
+   ][m
+ }[m
+\ No newline at end of file[m
+[1mdiff --git a/src/components/CRUD__table/CRUD__table.js b/src/components/CRUD__table/CRUD__table.js[m
+[1mindex 586f3c5..2b88752 100644[m
+[1m--- a/src/components/CRUD__table/CRUD__table.js[m
+[1m+++ b/src/components/CRUD__table/CRUD__table.js[m
+[36m@@ -18,9 +18,9 @@[m [mconst Table = ({ data, setDataToEdit, deleteData }) => {[m
+       </thead>[m
+       <tbody>[m
+     {[m
+[31m-      data.length === 0 [m
+[31m-      ? <tr><td className='noData' colSpan='5'>Sin datos...</td></tr>[m
+[31m-      : data.map( el => <TableRow key={ el.id } calzado={ el } setDataToEdit={ setDataToEdit } deleteData={ deleteData }/> )[m
+[32m+[m[32m      !data.length > 0[m[41m [m
+[32m+[m	[32m? <tr><td className='noData' colSpan='5'>Sin datos...</td></tr>[m
+[32m+[m	[32m: data.map( el => <TableRow key={ el.id } calzado={ el } setDataToEdit={ setDataToEdit } deleteData={ deleteData }/> )[m
+     }[m
+ 	[m
+       </tbody>[m
