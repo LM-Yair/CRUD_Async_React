@@ -1,7 +1,9 @@
-import React from 'react';
+import React, {useContext} from 'react';
+import CrudContext from '../../../Context/CrudContext';
 import './Table__Row.scss';
 
-const TableRow = ({ calzado, setDataToEdit, deleteData }) => {
+const TableRow = ({ calzado }) => {
+  const { setDataToEdit, deleteData } = useContext( CrudContext );
   const { id, tipo, marca, pais, precio }= calzado;
   return(
     <tr>

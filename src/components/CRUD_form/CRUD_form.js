@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
+import CrudContext from '../../Context/CrudContext';
 import './CRUD_form.scss';
 
 const initialForm = {
@@ -9,7 +10,9 @@ const initialForm = {
   precio: '',
 }
 
-const Form = ({ createData, updateData, dataToEdit, setDataToEdit }) => {
+const Form = () => {
+
+  const { createData, updateData, dataToEdit, setDataToEdit } = useContext( CrudContext );
   const [ form, setForm ] = useState( initialForm );
 
   useEffect(() => {

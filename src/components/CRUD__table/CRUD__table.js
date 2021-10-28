@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './CRUD__table.scss';
 import TableRow from './Table__Row/Table__Row';
+import CrudContext from '../../Context/CrudContext';
 
-const Table = ({ data, setDataToEdit, deleteData }) => {
-
+const Table = () => {
+  const { db } = useContext( CrudContext );
   return(
     <section className='container__table'>
     <table className='table__dats'>
@@ -18,14 +19,13 @@ const Table = ({ data, setDataToEdit, deleteData }) => {
       </thead>
       <tbody>
     {
-      !data.length > 0 
+      !db.length > 0 
 	? <tr><td className='noData' colSpan='5'>Sin datos...</td></tr>
-	: data.map( el => <TableRow key={ el.id } calzado={ el } setDataToEdit={ setDataToEdit } deleteData={ deleteData }/> )
+	: db.map( el => <TableRow key={ el.id } calzado={ el } /> )
     }
 	
       </tbody>
     </table>
-
     </section>
   );
 }

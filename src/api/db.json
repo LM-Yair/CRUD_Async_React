@@ -1,18 +1,18 @@
 {
   "calzados": [
     {
-      "id": 1634594893692,
-      "tipo": "Tenis",
-      "marca": "Nike",
-      "pais": "EEUU",
-      "precio": "$2600"
-    },
-    {
       "id": 1634594917369,
       "tipo": "Pantunflas",
       "marca": "Nike",
       "pais": "MX",
       "precio": "$750"
+    },
+    {
+      "id": 1635458577950,
+      "tipo": "Botas",
+      "marca": "CAT",
+      "pais": "EEUU",
+      "precio": "$2790"
     }
   ]
 }
